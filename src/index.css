@@ -4,9 +4,10 @@
     --main-dark-bg-color: #003249;
     --secondary-dark-bg-color: #007EA7;
     --secondary-light-bg-color: #9AD1D4;
+    padding:0;
+    margin:0;
 }
 
-.random{
-    font-family: "DINRound";
-    font-size:72px;
+body{
+    margin:0;
 }
