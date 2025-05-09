@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "../Pages/LoginPage.jsx";
-import LandingPage from "../Pages/LandingPage.jsx";
+import LandingPage from "../Pages/LandingPage/LandingPage.jsx";
 
 const AuthRoute = () => {
     return (

@@ -121,12 +121,12 @@ function ResponsiveAppBar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml: 3 }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'primary.main', letterSpacing:'.1rem',display: 'block', fontSize: '1.1rem', fontWeight: 600, ml: 1, fontFamily: 'DIN Round Pro' }}
+                sx={{ my: 2, color: 'primary.main', letterSpacing:'.1rem',display: 'block', fontSize: '1.1rem', fontWeight: 700, fontFamily: 'DINRound', mr: 4 }}
               >
                 {page}
               </Button>

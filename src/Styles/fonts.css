@@ -1,5 +1,9 @@
 @font-face {
-    font-family: 'DINRound';
+    font-family: 'DINRoundBold';
     src: url('../assets/DinRoundPro/dinroundpro.otf') format('opentype');
   }
-  
+
+@font-face {
+  font-family: 'DINRound';
+  src: url('../assets/DinRoundPro/dinroundpro_bold.otf') format('opentype');
+}
