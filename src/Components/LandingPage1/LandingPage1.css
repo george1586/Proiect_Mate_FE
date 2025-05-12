@@ -1,0 +1,73 @@
+.cat-img {
+    width: 41%;
+  }
+  
+  .first-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .rotating-text {
+    flex-basis: 100px;
+    font-family: "DinRound", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: black;
+  }
+  
+  .words-wrapper {
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-dark-bg-color);
+    text-align: center;
+  }
+  
+  .words-wrapper::after {
+    content: 'homophobic.'; 
+    visibility: hidden;
+    display: inline-block;
+    pointer-events: none;
+    height: 0;
+  }
+  
+  .word {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .letter {
+    display: inline-block;
+  }
+  
+  
+  .container-text{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 500px) {
+    img{
+        width: 80%;
+    }
+    .container-text{
+      margin-top:-5vh;
+    }
+  }
+  
+  @media (max-width: 300px)
+  {
+    .rotating-text{
+      font-size:20px;
+    }
+  }
+  
