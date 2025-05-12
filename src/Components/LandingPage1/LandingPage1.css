@@ -56,16 +56,19 @@
   
   
   @media (max-width: 500px) {
-    img{
-        width: 80%;
+    .cat-img{
+        width: 90%;
     }
     .container-text{
-      margin-top:-5vh;
+      margin-top:-7.5vh;
     }
   }
   
   @media (max-width: 300px)
   {
+    .cat-img{
+      width:90%;
+    }
     .rotating-text{
       font-size:20px;
     }

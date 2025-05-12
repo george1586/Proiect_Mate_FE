@@ -24,14 +24,14 @@ const LandingPage2 = () => {
     gsap.to(split.words, {
       y: '0%',
       opacity: 1,
-      duration: 0.8,
+      duration: 3,
       stagger: 0.1,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: containerRef.current,
         start: 'top 75%',
         end: 'bottom 25%',
-        toggleActions: 'play none reverse none',
+        toggleActions: 'play reset play reset',
       }
     });
 
@@ -43,11 +43,13 @@ const LandingPage2 = () => {
 
   return (
     <div className="landing-page" ref={containerRef}>
-      <div className="content-wrapper">
+      <div className="content-wrapper1">
+        <div className='text-container'>
+        <h1>gratuit. distractiv.<br/> eficient. </h1>
           <p ref={textRef}>
-            Welcome to the Catverse<br/>
-            Explore the feline universe
+          Cu Mate10, ai parte de o experiență de învățare inteligentă, rapidă și adaptată perfect nevoilor tale. Nu mai e nevoie să te lupți singur cu manualele sau să memorezi mecanic formule – aici înveți prin metode dovedite, care transformă orice concept abstract în ceva tangibil și ușor de înțeles.
           </p>
+        </div>
         <img src="src/assets/dopeCat.png" alt="Cool cat" className="cat-image" />
        </div>
     </div>
