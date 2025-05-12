@@ -7,8 +7,8 @@ import './LandingPage2.css';
 const LandingPage2 = () => {
   const textRef = useRef(null);
   const containerRef = useRef(null);
-
   useEffect(() => {
+    const catImg = document.querySelector(".cat-image");
     gsap.registerPlugin(ScrollTrigger);
 
     if (!textRef.current || !containerRef.current) return;
@@ -19,13 +19,33 @@ const LandingPage2 = () => {
       wordClass: 'split-word'
     });
 
-    gsap.set(split.words, { y: '100%', opacity: 0 });
+    gsap.set(catImg, {
+      y: "-10%",
+      opacity: 0,
+      scale: 0.9,
+    });
 
-    gsap.to(split.words, {
+    gsap.to(catImg, {
+            y: "-10%",
+            opacity: 1,
+            duration: 1,
+            ease: "sine.inOut",
+            scale: 1,
+            scrollTrigger: {
+              trigger: containerRef.current,
+              start: 'top 100%',
+              end: 'bottom 25%',
+              toggleActions: 'play reset play reset',
+            }});
+
+    gsap.set(split.lines, { y: '100%', opacity: 0 });
+
+
+    gsap.to(split.lines, {
       y: '0%',
       opacity: 1,
       duration: 3,
-      stagger: 0.1,
+      stagger: 0.3,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: containerRef.current,

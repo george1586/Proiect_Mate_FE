@@ -6,7 +6,6 @@ import './LandingPage1.css';
 const LandingPage1 = () => {
     useEffect(() => {
         const words = document.querySelectorAll(".word");
-    
         const catImg = document.querySelector(".cat-img");
     
       gsap.fromTo(catImg,
