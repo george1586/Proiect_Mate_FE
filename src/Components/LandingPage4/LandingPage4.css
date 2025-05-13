@@ -1,0 +1,11 @@
+.cat-image2{
+    width: 41%;
+    margin-right:9vh;
+  }
+
+  @media (max-width: 900px) {
+    .cat-image2{
+        width: 80%;
+        margin-right:0;
+    }
+}

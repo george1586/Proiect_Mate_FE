@@ -2,13 +2,13 @@ import { useEffect, useRef } from 'react';
 import SplitType from 'split-type';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './LandingPage3.css';
+import '../LandingPage2/LandingPage2.css';
 
-const LandingPage3 = () => {
+const LandingPage4 = () => {
   const textRef = useRef(null);
   const containerRef = useRef(null);
   useEffect(() => {
-    const catImg = document.querySelector(".cat-image1");
+    const catImg = document.querySelector(".cat-image2");
     gsap.registerPlugin(ScrollTrigger);
 
     if (!textRef.current || !containerRef.current) return;
@@ -62,17 +62,16 @@ const LandingPage3 = () => {
 
   return (
     <div className="landing-page" ref={containerRef}>
-      <div className="content-wrapper2">
-        <img src="src/assets/smartCat.png" alt="Cool cat" className="cat-image1" />
-        <div className='text-container1'>
-        <h1>bazat pe știință</h1>
+      <div className="content-wrapper1">
+        <div className='text-container'>
+        <h1>învățare personalizată </h1>
           <p ref={textRef}>
-          Folosim metode demonstrate științific și abordări creative pentru a transforma orice lecție într-o experiență de învățare eficientă.De la algebra de bază până la probleme complexe, progresezi în ritmul tău, cu feedback instant care te ajută să înveți din greșeli. 
-          </p>
+          Combinând în mod optim inteligența artificială și lingvistica, lecțiile sunt create pentru a te ajuta să înveți la nivelul și în ritmul adecvat. Fără teorii inutile, doar ce trebuie să știi, explicat pe înțelesul tuturor.</p>
         </div>
+        <img src="src/assets/chillCat.jpg" alt="Cool cat" className="cat-image2" />
        </div>
     </div>
   );
 };
 
-export default LandingPage3;
+export default LandingPage4;

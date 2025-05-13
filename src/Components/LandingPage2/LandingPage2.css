@@ -7,6 +7,11 @@
   margin-right:9vh;
 }
 
+.cat-image2{
+  width: 41%;
+  margin-right:9vh;
+}
+
 .text-container{
   display: flex;
   flex-direction: column;
@@ -48,6 +53,11 @@
       width: 80%;
       margin-right:0;
   }
+
+  .cat-image2{
+    width: 80%;
+    margin-right:0;
+}
   .content-wrapper1{
     flex-direction: column;
     

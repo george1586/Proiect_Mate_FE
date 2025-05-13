@@ -20,7 +20,6 @@ const LandingPage2 = () => {
     });
 
     gsap.set(catImg, {
-      y: "-10%",
       opacity: 0,
       scale: 0.9,
     });
